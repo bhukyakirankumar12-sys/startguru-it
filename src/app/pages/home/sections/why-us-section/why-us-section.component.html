@@ -1,0 +1,34 @@
+<section id="about" class="why sg-section sg-section--alt" aria-labelledby="why-title">
+  <div class="sg-container">
+    <div class="why__head reveal" appReveal>
+      <p class="sg-kicker">Why StarGuru IT</p>
+      <h2 id="why-title" class="sg-section-title">Your Trusted Technology Partner</h2>
+      <p class="sg-section-lead">
+        We combine executive-level consulting discipline with hands-on engineering—so strategy becomes shipped
+        software, not slideware.
+      </p>
+    </div>
+
+    <div class="why__grid">
+      @for (v of values; track v.id) {
+        <div class="why-card reveal" appReveal>
+          <div class="why-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 13l4 4L19 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="why-card__title">{{ v.title }}</h3>
+            <p class="why-card__text">{{ v.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

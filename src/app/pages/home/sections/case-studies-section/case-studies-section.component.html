@@ -1,0 +1,30 @@
+<section id="case-studies" class="cases sg-section" aria-labelledby="cases-title">
+  <div class="sg-container">
+    <div class="cases__head reveal" appReveal>
+      <div>
+        <p class="sg-kicker">Outcomes</p>
+        <h2 id="cases-title" class="sg-section-title">Real Solutions. Real Impact.</h2>
+      </div>
+      <a class="cases__all" href="#contact">Request a briefing <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="cases__grid">
+      @for (c of cases; track c.id) {
+        <article class="case-card reveal" appReveal>
+          <div class="case-card__media">
+            <img [src]="c.imageUrl" [alt]="c.imageAlt" loading="lazy" decoding="async" />
+            <div class="case-card__scrim" aria-hidden="true"></div>
+          </div>
+          <div class="case-card__body">
+            <p class="case-card__tag">{{ c.category }}</p>
+            <h3 class="case-card__title">{{ c.title }}</h3>
+            <p class="case-card__text">{{ c.description }}</p>
+            <a class="case-card__btn" href="#contact" [attr.aria-label]="'View case study: ' + c.title">
+              View Case Study
+            </a>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

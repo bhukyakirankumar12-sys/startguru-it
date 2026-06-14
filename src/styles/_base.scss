@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--sg-font-sans);
+  font-size: var(--sg-text-body);
+  line-height: 1.6;
+  color: var(--sg-color-text);
+  background: var(--sg-color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--sg-header-h) + 12px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sg-color-primary);
+  outline-offset: 2px;
+}
+
+.sg-skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.sg-skip:focus {
+  position: fixed;
+  left: var(--sg-space-2);
+  top: var(--sg-space-2);
+  z-index: 10000;
+  width: auto;
+  height: auto;
+  padding: var(--sg-space-2) var(--sg-space-3);
+  background: var(--sg-color-secondary);
+  color: var(--sg-color-white);
+  border-radius: var(--sg-radius-sm);
+}
+
+.sg-container {
+  width: 100%;
+  max-width: var(--sg-container);
+  margin-inline: auto;
+  padding-inline: clamp(var(--sg-space-2), 4vw, var(--sg-space-6));
+}
+
+.sg-section {
+  padding-block: clamp(var(--sg-space-6), 8vw, var(--sg-space-10));
+}
+
+.sg-section--alt {
+  background: var(--sg-color-section);
+}
+
+.sg-kicker {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sg-color-primary);
+}
+
+.sg-section-title {
+  font-size: var(--sg-text-section);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--sg-space-3);
+  color: var(--sg-color-text);
+}
+
+.sg-section-lead {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--sg-color-text-muted);
+  font-size: 1.0625rem;
+}

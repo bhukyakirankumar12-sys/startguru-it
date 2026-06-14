@@ -1,0 +1,21 @@
+<section id="insights" class="insights sg-section" aria-labelledby="insights-title">
+  <div class="sg-container">
+    <div class="insights__head reveal" appReveal>
+      <p class="sg-kicker">Insights</p>
+      <h2 id="insights-title" class="sg-section-title">Executive Perspectives on AI, Cloud, and Platforms</h2>
+      <p class="sg-section-lead">
+        Practical guidance for CIOs and engineering leaders navigating modernization, governance, and scale.
+      </p>
+    </div>
+
+    <div class="insights__grid">
+      @for (it of items; track it.id) {
+        <a class="insight-card reveal" appReveal [href]="it.href">
+          <p class="insight-card__meta">{{ it.meta }}</p>
+          <h3 class="insight-card__title">{{ it.title }}</h3>
+          <span class="insight-card__cta">Read article <span aria-hidden="true">→</span></span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

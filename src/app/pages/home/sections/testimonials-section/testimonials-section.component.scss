@@ -1,0 +1,125 @@
+.tmo__head {
+  max-width: 900px;
+  margin-bottom: clamp(var(--sg-space-4), 4vw, var(--sg-space-6));
+}
+
+.tmo__carousel {
+  position: relative;
+  border-radius: calc(var(--sg-radius-lg) + 4px);
+  border: 1px solid var(--sg-color-border);
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  box-shadow: var(--sg-shadow-md);
+  padding: clamp(var(--sg-space-4), 4vw, var(--sg-space-6));
+}
+
+.tmo__controls {
+  position: absolute;
+  right: clamp(var(--sg-space-3), 4vw, var(--sg-space-5));
+  top: clamp(var(--sg-space-3), 4vw, var(--sg-space-5));
+  display: flex;
+  gap: 10px;
+}
+
+.tmo__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--sg-color-border);
+  background: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--sg-color-secondary);
+  transition:
+    border-color var(--sg-duration) var(--sg-ease-out),
+    transform var(--sg-duration) var(--sg-ease-out);
+}
+
+.tmo__btn:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
+}
+
+.tmo__slide {
+  max-width: 900px;
+}
+
+.tmo__quote {
+  font-size: 3rem;
+  line-height: 1;
+  color: rgba(37, 99, 235, 0.35);
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.tmo__text {
+  margin: 0 0 var(--sg-space-4);
+  font-size: clamp(1.05rem, 1.2vw + 0.9rem, 1.25rem);
+  line-height: 1.7;
+  color: var(--sg-color-text);
+}
+
+.tmo__person {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: var(--sg-space-3);
+}
+
+.tmo__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid var(--sg-color-border);
+}
+
+.tmo__name {
+  margin: 0;
+  font-weight: 900;
+}
+
+.tmo__role {
+  margin: 4px 0 0;
+  color: var(--sg-color-text-muted);
+  font-weight: 600;
+}
+
+.tmo__stars {
+  color: #f59e0b;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+}
+
+.tmo__star--off {
+  color: rgba(245, 158, 11, 0.25);
+}
+
+.tmo__dots {
+  display: flex;
+  gap: 10px;
+  margin-top: var(--sg-space-4);
+}
+
+.tmo__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  background: rgba(37, 99, 235, 0.12);
+  cursor: pointer;
+}
+
+.tmo__dot--on {
+  width: 28px;
+  background: var(--sg-color-primary);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+@media (max-width: 640px) {
+  .tmo__controls {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: var(--sg-space-3);
+  }
+}

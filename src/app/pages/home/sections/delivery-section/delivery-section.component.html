@@ -1,0 +1,101 @@
+<section id="delivery" class="delivery sg-section sg-section--alt" aria-labelledby="delivery-title">
+  <div class="sg-container">
+    <div class="delivery__head reveal" appReveal>
+      <p class="sg-kicker">Delivery</p>
+      <h2 id="delivery-title" class="sg-section-title">AI-Powered Delivery Lifecycle</h2>
+      <p class="sg-section-lead">
+        A disciplined enterprise lifecycle that blends human judgment with AI acceleration—without compromising
+        security, quality, or accountability.
+      </p>
+    </div>
+
+    <ol class="delivery__timeline" aria-label="Delivery lifecycle steps">
+      @for (step of steps; track step.id; let i = $index) {
+        <li class="delivery__step reveal" appReveal>
+          <div class="delivery__node" [attr.data-step]="step.icon">
+            <div class="delivery__icon" aria-hidden="true">
+              @switch (step.icon) {
+                @case ('discover') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    />
+                    <path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  </svg>
+                }
+                @case ('research') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M7 7h10v10H7z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  </svg>
+                }
+                @case ('architect') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 20h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    <path
+                      d="M7 20V10l5-3 5 3v10"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                }
+                @case ('build') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M8 17l-5-5 5-5M16 7l5 5-5 5"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                }
+                @case ('test') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M5 13l4 4L19 7"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                }
+                @case ('deploy') {
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 3v18"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8 7l4-4 4 4M8 17l4 4 4-4"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                }
+              }
+            </div>
+            <div class="delivery__meta">
+              <p class="delivery__label">Step {{ i + 1 }}</p>
+              <h3 class="delivery__title">{{ step.title }}</h3>
+              <p class="delivery__sub">{{ step.subtitle }}</p>
+            </div>
+          </div>
+        </li>
+      }
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+<section id="top" class="hero sg-section" aria-labelledby="hero-title">
+  <div class="hero__grid sg-container">
+    <div class="hero__copy">
+      <p class="hero__badge">AI-FIRST • CLOUD-NATIVE • ENTERPRISE READY</p>
+      <h1 id="hero-title" class="hero__title">
+        Transforming Businesses
+        <span class="hero__title-accent">with AI, Cloud &amp; Modern Engineering</span>
+      </h1>
+      <p class="hero__sub">
+        We build intelligent digital platforms that accelerate innovation, improve efficiency, and help
+        enterprises scale globally.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Schedule Consultation</a>
+        <a class="btn btn--secondary" href="#services">
+          <span class="hero__play" aria-hidden="true">▶</span>
+          Explore Services
+        </a>
+      </div>
+      <div class="hero__trust">
+        <div class="hero__stars" aria-label="Five out of five stars">★★★★★</div>
+        <p class="hero__trust-text">Trusted by 100+ clients globally</p>
+      </div>
+      <div class="hero__logos" aria-label="Technology ecosystem partners">
+        @for (logo of logos; track logo.name) {
+          <span class="hero__logo-pill">{{ logo.name }}</span>
+        }
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__stage">
+        <div class="hero__glow"></div>
+        <div class="hero__orbit">
+          @for (card of floating; track card.id) {
+            <div
+              class="hero__float"
+              [style.transform]="'rotate(' + card.angle + 'deg) translateY(-' + card.radius + 'px)'"
+            >
+              <div class="hero__float-bob" [style.--delay]="card.delay">
+                <div
+                  class="hero__float-inner"
+                  [style.transform]="'rotate(' + -card.angle + 'deg)'"
+                >
+                  {{ card.label }}
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+        <div class="hero__cube">
+          <div class="hero__cube-face hero__cube-face--front">AI</div>
+          <div class="hero__cube-face hero__cube-face--right"></div>
+          <div class="hero__cube-face hero__cube-face--top"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

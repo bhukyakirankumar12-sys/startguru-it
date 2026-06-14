@@ -1,0 +1,56 @@
+<section id="testimonials" class="tmo sg-section sg-section--alt" aria-labelledby="tmo-title">
+  <div class="sg-container">
+    <div class="tmo__head reveal" appReveal>
+      <p class="sg-kicker">Client Voice</p>
+      <h2 id="tmo-title" class="sg-section-title">What Our Clients Say</h2>
+      <p class="sg-section-lead">
+        Long-term partnerships built on outcomes, transparency, and engineering excellence.
+      </p>
+    </div>
+
+    <div class="tmo__carousel reveal" appReveal aria-roledescription="carousel">
+      <div class="tmo__controls">
+        <button type="button" class="tmo__btn" (click)="prev()" aria-label="Previous testimonial">‹</button>
+        <button type="button" class="tmo__btn" (click)="next()" aria-label="Next testimonial">›</button>
+      </div>
+
+      <article class="tmo__slide" aria-live="polite">
+        @let t = active();
+        <div class="tmo__quote" aria-hidden="true">“</div>
+        <p class="tmo__text">{{ t.quote }}</p>
+        <div class="tmo__person">
+          <img
+            class="tmo__avatar"
+            [src]="t.avatarUrl"
+            [attr.alt]="'Photo of ' + t.name"
+            width="56"
+            height="56"
+          />
+          <div>
+            <p class="tmo__name">{{ t.name }}</p>
+            <p class="tmo__role">{{ t.role }}, {{ t.company }}</p>
+          </div>
+        </div>
+        <div class="tmo__stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+          @for (s of [1, 2, 3, 4, 5]; track s) {
+            <span [class.tmo__star--off]="s > t.rating" aria-hidden="true">★</span>
+          }
+        </div>
+      </article>
+
+      <div class="tmo__dots" role="tablist" aria-label="Choose testimonial">
+        @for (it of items; track it.id; let i = $index) {
+          <button
+            type="button"
+            class="tmo__dot"
+            [class.tmo__dot--on]="i === index()"
+            (click)="goTo(i)"
+            [attr.aria-selected]="i === index()"
+            role="tab"
+            [attr.aria-label]="'Show testimonial ' + (i + 1)"
+          ></button>
+        }
+      </div>
+    </div>
+  </div>
+</section>

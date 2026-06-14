@@ -1,0 +1,69 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__top sg-container">
+    <div class="footer__brand">
+      <div class="footer__logo">StarGuru IT</div>
+      <p class="footer__lead">
+        Global technology consulting and engineering for enterprises that demand velocity with governance.
+      </p>
+      <div class="footer__social" aria-label="Social media">
+        @for (s of social; track s.href) {
+          <a
+            class="footer__social-link"
+            [href]="s.href"
+            [attr.target]="s.external ? '_blank' : null"
+            [attr.rel]="s.external ? 'noopener noreferrer' : null"
+          >
+            <span class="sr-only">{{ s.label }}</span>
+            @switch (s.icon) {
+              @case ('linkedin') {
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M6.94 6.5a2.12 2.12 0 1 0 0-4.24 2.12 2.12 0 0 0 0 4.24Zm-1.7 3.2h3.4V20.5H5.24V9.7Zm6.08 0h3.26v1.47h.05c.45-.86 1.55-1.77 3.2-1.77 3.42 0 4.05 2.25 4.05 5.18V20.5h-3.55v-5.6c0-1.34-.02-3.06-1.86-3.06-1.86 0-2.14 1.46-2.14 2.96v5.7h-3.55V9.7Z"
+                  />
+                </svg>
+              }
+              @case ('facebook') {
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M13.5 22v-8.2h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.5-1.5h1.6V4.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7v3.1h2.9V22h3.6Z"
+                  />
+                </svg>
+              }
+              @case ('instagram') {
+                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.8-3.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"
+                  />
+                </svg>
+              }
+            }
+          </a>
+        }
+      </div>
+    </div>
+
+    <div class="footer__grid">
+      @for (col of columns; track col.title) {
+        <div class="footer__col">
+          <h2 class="footer__col-title">{{ col.title }}</h2>
+          <ul class="footer__links">
+            @for (link of col.links; track link.label) {
+              <li>
+                <a class="footer__link" [href]="link.href">{{ link.label }}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="sg-container footer__bottom-inner">
+      <small>© {{ year }} StarGuru IT. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>

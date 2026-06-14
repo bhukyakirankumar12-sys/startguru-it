@@ -1,0 +1,103 @@
+<section id="contact" class="contact sg-section sg-section--alt" aria-labelledby="contact-title">
+  <div class="sg-container contact__grid">
+    <div class="contact__left reveal" appReveal>
+      <p class="sg-kicker">Contact</p>
+      <h2 id="contact-title" class="sg-section-title">Let's Build Something Amazing Together</h2>
+      <p class="contact__lead">
+        Speak with a principal consultant about your platform roadmap, AI adoption, or modernization program.
+      </p>
+
+      <div class="contact__card" role="group" aria-label="Primary contact">
+        <p class="contact__label">Contact Person</p>
+        <p class="contact__value">N Manasa</p>
+
+        <p class="contact__label">Email</p>
+        <a class="contact__link" href="mailto:abc@gmail.com">abc@gmail.com</a>
+
+        <p class="contact__label">Phone</p>
+        <a class="contact__link" href="tel:+1123456789">+1 123456789</a>
+
+        <p class="contact__label">Address</p>
+        <p class="contact__value">Business Office</p>
+      </div>
+
+      <a class="contact__cta" href="mailto:abc@gmail.com?subject=Free%20Consultation%20Request"
+        >Schedule Free Consultation</a
+      >
+    </div>
+
+    <div class="contact__right reveal" appReveal>
+      <form id="contact-form" class="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+        <div class="contact-form__head">
+          <h3 class="contact-form__title">Send a message</h3>
+          <p class="contact-form__sub">We respond within one business day.</p>
+        </div>
+
+        @if (sent()) {
+          <p class="contact-form__success" role="status">Thank you—your message has been received.</p>
+        }
+
+        <div class="contact-form__fields">
+          <label class="field">
+            <span class="field__label">Full Name</span>
+            <input
+              class="field__input"
+              type="text"
+              autocomplete="name"
+              formControlName="fullName"
+              [attr.aria-invalid]="form.controls.fullName.invalid && form.controls.fullName.touched"
+            />
+            @if (form.controls.fullName.touched && form.controls.fullName.hasError('required')) {
+              <span class="field__error">Name is required.</span>
+            }
+          </label>
+
+          <label class="field">
+            <span class="field__label">Work Email</span>
+            <input
+              class="field__input"
+              type="email"
+              autocomplete="email"
+              formControlName="workEmail"
+              [attr.aria-invalid]="form.controls.workEmail.invalid && form.controls.workEmail.touched"
+            />
+            @if (form.controls.workEmail.touched && form.controls.workEmail.hasError('required')) {
+              <span class="field__error">Email is required.</span>
+            }
+            @if (form.controls.workEmail.touched && form.controls.workEmail.hasError('email')) {
+              <span class="field__error">Enter a valid email.</span>
+            }
+          </label>
+
+          <label class="field">
+            <span class="field__label">Company</span>
+            <input class="field__input" type="text" autocomplete="organization" formControlName="company" />
+          </label>
+
+          <label class="field">
+            <span class="field__label">Phone Number</span>
+            <input class="field__input" type="tel" autocomplete="tel" formControlName="phone" />
+          </label>
+
+          <label class="field field--full">
+            <span class="field__label">Message</span>
+            <textarea
+              class="field__input field__input--area"
+              rows="5"
+              formControlName="message"
+              [attr.aria-invalid]="form.controls.message.invalid && form.controls.message.touched"
+            ></textarea>
+            @if (form.controls.message.touched && form.controls.message.hasError('required')) {
+              <span class="field__error">Message is required.</span>
+            }
+            @if (form.controls.message.touched && form.controls.message.hasError('minlength')) {
+              <span class="field__error">Please add a bit more detail (10+ characters).</span>
+            }
+          </label>
+        </div>
+
+        <button class="contact-form__submit" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
