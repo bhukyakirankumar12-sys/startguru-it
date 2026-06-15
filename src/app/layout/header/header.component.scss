@@ -27,33 +27,23 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--sg-space-2);
   min-width: 0;
+  text-decoration: none;
 }
 
-.brand__mark {
-  flex-shrink: 0;
+.brand:focus-visible {
+  outline: 2px solid var(--sg-color-primary);
+  outline-offset: 4px;
+  border-radius: 8px;
 }
 
-.brand__text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.brand__name {
-  font-weight: 700;
-  font-size: 1.125rem;
-  letter-spacing: -0.02em;
-  color: var(--sg-color-secondary);
-  line-height: 1.1;
-}
-
-.brand__tag {
-  font-size: 0.75rem;
-  color: var(--sg-color-text-muted);
-  letter-spacing: 0.02em;
+.brand__logo {
+  display: block;
+  height: clamp(56px, 10vw, 76px);
+  width: auto;
+  max-width: min(280px, 52vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav-toggle {
