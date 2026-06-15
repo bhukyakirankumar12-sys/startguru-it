@@ -24,67 +24,68 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const CLIENT_LOGOS: ClientLogo[] = [
   { name: 'Microsoft' },
+  { name: 'Azure' },
+  { name: 'ServiceNow' },
+  { name: '.NET' },
+  { name: 'Oracle' },
   { name: 'AWS' },
   { name: 'Google Cloud' },
-  { name: 'Oracle' },
   { name: 'SAP' },
-  { name: 'Salesforce' },
 ];
 
 export const SERVICES: ServiceCard[] = [
   {
-    id: 'ai',
-    title: 'AI Development',
+    id: 'servicenow',
+    title: 'ServiceNow CSM & Platform',
     description:
-      'Responsible GenAI, copilots, and intelligent automation engineered for regulated, high-scale enterprise environments.',
-    icon: 'ai',
+      'Enterprise ServiceNow implementations for CSM, Case Management, Major Incident, SLAs, and UI Policies. End-to-end platform engineering and workflow automation.',
+    icon: 'servicenow',
   },
   {
-    id: 'cloud',
-    title: 'Cloud Engineering',
+    id: 'azure',
+    title: 'Azure Cloud Engineering',
     description:
-      'Landing zones, modernization, and resilient cloud platforms across hyperscalers with security-by-design governance.',
+      'App Services, Azure SQL, Service Bus, Key Vault, and DevOps pipelines. Migrate legacy .NET monoliths to event-driven cloud architectures with security-by-design.',
     icon: 'cloud',
   },
   {
-    id: 'enterprise',
-    title: 'Enterprise Applications',
+    id: 'dotnet',
+    title: '.NET Application Modernization',
     description:
-      'ERP, CRM, and core systems integration with clean architecture, APIs, and measurable business outcomes.',
+      'Modernize legacy C#, VB.NET, ASP.NET, and WCF applications to Angular + ASP.NET Core. Clean architecture, REST APIs, and measurable performance gains.',
     icon: 'enterprise',
-  },
-  {
-    id: 'devops',
-    title: 'DevOps & Automation',
-    description:
-      'Platform engineering, CI/CD, observability, and SRE practices that accelerate delivery without compromising stability.',
-    icon: 'devops',
   },
   {
     id: 'data',
     title: 'Data Engineering & BI',
     description:
-      'Modern data platforms, lakehouses, and executive-grade analytics that turn fragmented data into decisions.',
+      'SQL Server, SSIS, and Crystal Reports to modern data platforms. Build executive-grade analytics and lakehouses that turn fragmented data into decisions.',
     icon: 'data',
   },
   {
-    id: 'transform',
-    title: 'Digital Transformation',
+    id: 'ai',
+    title: 'AI & Intelligent Automation',
     description:
-      'Operating model change, product strategy, and technology roadmaps aligned to board-level priorities.',
-    icon: 'transform',
+      'Responsible GenAI, copilots, and intelligent automation engineered for regulated, high-scale enterprise environments using Azure AI and Copilot.',
+    icon: 'ai',
+  },
+  {
+    id: 'devops',
+    title: 'DevOps & CI/CD',
+    description:
+      'Azure DevOps, CI/CD pipelines, observability with Application Insights, and SRE practices that accelerate delivery without compromising stability.',
+    icon: 'devops',
   },
 ];
 
 export const INDUSTRIES: IndustryCard[] = [
   { id: 'health', name: 'Healthcare', icon: 'health' },
-  { id: 'finance', name: 'Finance', icon: 'finance' },
+  { id: 'finance', name: 'Finance & Banking', icon: 'finance' },
+  { id: 'aviation', name: 'Aviation & Airlines', icon: 'aviation' },
   { id: 'mfg', name: 'Manufacturing', icon: 'factory' },
   { id: 'retail', name: 'Retail & eCommerce', icon: 'retail' },
   { id: 'logistics', name: 'Logistics & Supply Chain', icon: 'logistics' },
-  { id: 'edu', name: 'Education', icon: 'education' },
-  { id: 'telecom', name: 'Telecom', icon: 'telecom' },
-  { id: 'media', name: 'Media & Entertainment', icon: 'media' },
+  { id: 'telecom', name: 'Telecom & Media', icon: 'telecom' },
 ];
 
 export const DELIVERY_STEPS: DeliveryStep[] = [
@@ -129,13 +130,13 @@ export const DELIVERY_STEPS: DeliveryStep[] = [
 export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 'cs1',
-    category: 'Healthcare',
-    title: 'AI Powered Healthcare Platform',
+    category: 'Aviation',
+    title: 'Flight Operations Modernization on Azure',
     description:
-      'Clinical workflow intelligence, interoperability, and predictive operations for a multi-region health system.',
+      'Migrated mission-critical Sev 1 & Sev 2 Flight Operations workloads from legacy .NET monoliths to Azure App Services, SQL, and Service Bus. Delivered event-driven architecture serving 150–250 internal users across dispatch, SOC, and NOC teams in real time.',
     imageUrl:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Healthcare professional reviewing digital patient information',
+      'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80',
+    imageAlt: 'Airplane wing view from window during flight',
   },
   {
     id: 'cs2',
@@ -149,10 +150,10 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: 'cs3',
-    category: 'Knowledge',
-    title: 'Enterprise Knowledge Assistant',
+    category: 'ServiceNow',
+    title: 'Enterprise ServiceNow CSM Implementation',
     description:
-      'Grounded GenAI over enterprise content with governance, audit trails, and role-aware responses for global teams.',
+      'Designed and deployed ServiceNow CSM with Case Management, Major Incident workflows, SLAs, and UI Policies. Reduced resolution time and improved service efficiency across multi-region operations.',
     imageUrl:
       'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80',
     imageAlt: 'Team collaborating in a modern office environment',
@@ -162,33 +163,33 @@ export const CASE_STUDIES: CaseStudy[] = [
 export const VALUE_PROPS: ValueCard[] = [
   {
     id: 'v1',
-    title: '12+ Years Industry Experience',
-    description: 'Deep delivery experience across complex programs and global operating models.',
+    title: '16+ Years Industry Experience',
+    description: 'Deep delivery experience across enterprise .NET, Azure, ServiceNow, and complex program modernization.',
   },
   {
     id: 'v2',
-    title: 'AI First Engineering Mindset',
-    description: 'Practical AI adoption with safety, observability, and enterprise controls baked in.',
+    title: 'ServiceNow CSM Specialists',
+    description: 'Certified ServiceNow practitioners with hands-on CSM, case management, and platform automation expertise.',
   },
   {
     id: 'v3',
-    title: 'Enterprise Grade Architecture',
-    description: 'Patterns that scale: security, resilience, performance, and maintainability by default.',
+    title: 'Azure Cloud-Native Architecture',
+    description: 'Patterns that scale: Azure App Services, Service Bus, SQL, Key Vault, and DevOps with security-by-design.',
   },
   {
     id: 'v4',
     title: 'Agile & Transparent Delivery',
-    description: 'Executive-ready reporting with measurable milestones and clear risk management.',
+    description: 'Executive-ready reporting with measurable milestones, JIRA/ Azure DevOps traceability, and clear risk management.',
   },
   {
     id: 'v5',
-    title: 'Scalable & Secure Solutions',
-    description: 'Zero-trust aligned designs with operational excellence from day one.',
+    title: 'Legacy to Cloud Modernization',
+    description: 'Proven track record modernizing .NET monoliths into event-driven cloud architectures with zero-downtime cutovers.',
   },
   {
     id: 'v6',
     title: 'Dedicated Support & Partnership',
-    description: 'Long-term enablement: run, optimize, and continuously modernize with your teams.',
+    description: 'Long-term enablement: run, optimize, and continuously modernize with your teams across onshore/offshore models.',
   },
 ];
 
@@ -206,7 +207,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't2',
     quote:
-      'From cloud foundation to GenAI guardrails, they brought clarity to complexity. Our platform modernization landed on time with measurable KPIs.',
+      'From legacy .NET migration to Azure and ServiceNow implementation, they brought clarity to complexity. Our platform modernization landed on time with measurable KPIs.',
     name: 'Daniel Okonkwo',
     role: 'VP, Engineering',
     company: 'Helix Logistics',
@@ -238,19 +239,19 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: 'Services',
     links: [
-      { label: 'AI Development', href: '#services' },
-      { label: 'Cloud Engineering', href: '#services' },
-      { label: 'Enterprise Applications', href: '#services' },
+      { label: 'ServiceNow CSM', href: '#services' },
+      { label: 'Azure Cloud Engineering', href: '#services' },
+      { label: '.NET Modernization', href: '#services' },
       { label: 'Data & Analytics', href: '#services' },
     ],
   },
   {
     title: 'Industries',
     links: [
+      { label: 'Aviation & Airlines', href: '#industries' },
       { label: 'Healthcare', href: '#industries' },
       { label: 'Finance', href: '#industries' },
-      { label: 'Manufacturing', href: '#industries' },
-      { label: 'Retail', href: '#industries' },
+      { label: 'Logistics', href: '#industries' },
     ],
   },
   {
@@ -279,10 +280,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const HERO_FLOATING: HeroFloatingCard[] = [
-  { id: 'c1', label: 'Cloud Engineering', angle: -12, radius: 118, delay: '0s' },
-  { id: 'c2', label: 'Enterprise Applications', angle: 38, radius: 124, delay: '0.2s' },
-  { id: 'c3', label: 'AI Solutions', angle: 112, radius: 108, delay: '0.35s' },
-  { id: 'c4', label: 'DevOps Automation', angle: 168, radius: 130, delay: '0.1s' },
+  { id: 'c1', label: 'ServiceNow CSM', angle: -12, radius: 118, delay: '0s' },
+  { id: 'c2', label: 'Azure Cloud', angle: 38, radius: 124, delay: '0.2s' },
+  { id: 'c3', label: '.NET Modernization', angle: 112, radius: 108, delay: '0.35s' },
+  { id: 'c4', label: 'DevOps & CI/CD', angle: 168, radius: 130, delay: '0.1s' },
   { id: 'c5', label: 'Data Engineering', angle: -110, radius: 120, delay: '0.25s' },
-  { id: 'c6', label: 'Digital Transformation', angle: -52, radius: 128, delay: '0.4s' },
+  { id: 'c6', label: 'Flight Ops Systems', angle: -52, radius: 128, delay: '0.4s' },
 ];

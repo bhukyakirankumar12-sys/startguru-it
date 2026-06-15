@@ -9,13 +9,13 @@ export interface ServiceCard {
   id: string;
   title: string;
   description: string;
-  icon: 'ai' | 'cloud' | 'enterprise' | 'devops' | 'data' | 'transform';
+  icon: 'ai' | 'cloud' | 'enterprise' | 'devops' | 'data' | 'transform' | 'servicenow';
 }
 
 export interface IndustryCard {
   id: string;
   name: string;
-  icon: 'health' | 'finance' | 'factory' | 'retail' | 'logistics' | 'education' | 'telecom' | 'media';
+  icon: 'health' | 'finance' | 'factory' | 'retail' | 'logistics' | 'education' | 'telecom' | 'media' | 'aviation';
 }
 
 export interface DeliveryStep {
