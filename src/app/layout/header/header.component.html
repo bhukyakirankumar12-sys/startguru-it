@@ -1,20 +1,26 @@
 <header
   class="header"
-  [class.header--shadow]="scrolled()"
+  [class.header--scrolled]="scrolled()"
   role="banner"
 >
   <div class="header__inner sg-container">
-    <a class="brand" href="#top" (click)="closeMenu()">
-      <img
-        class="brand__logo"
-        src="/images/starguru-logo.png"
-        width="1024"
-        height="682"
-        alt="StarGuru IT — Build. Transform. Grow."
-        decoding="async"
-        fetchpriority="high"
-      />
-    </a>
+    <div class="header__brand-area">
+      <a class="brand" href="#top" (click)="closeMenu()" aria-label="StarGuru — Build. Transform. Grow.">
+        <img
+          class="brand__logo"
+          src="/images/starguru-logo-horizontal-white-text.png"
+          width="210"
+          height="73"
+          alt="StarGuru — Build. Transform. Grow."
+          decoding="async"
+          fetchpriority="high"
+        />
+      </a>
+      <span class="header__badge" title="Minority & Women-Owned Small Business · Cumming, GA">
+        <span class="header__badge-star" aria-hidden="true">★</span>
+        Minority Women-Owned
+      </span>
+    </div>
 
     <button
       type="button"
@@ -22,6 +28,7 @@
       [attr.aria-expanded]="menuOpen()"
       aria-controls="primary-navigation"
       (click)="toggleMenu()"
+      aria-label="Toggle navigation menu"
     >
       <span class="sr-only">Toggle navigation</span>
       <span class="nav-toggle__bars" aria-hidden="true"></span>
@@ -40,10 +47,26 @@
           </li>
         }
       </ul>
-      <a class="btn btn--primary header__cta" href="#contact" (click)="closeMenu()">
-        Schedule Consultation
-        <span class="btn__chev" aria-hidden="true">→</span>
-      </a>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+16789954883" aria-label="Call +1 678 995 4883">
+          <svg class="header__phone-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>(678) 995-4883</span>
+        </a>
+
+        <a class="btn btn--gold header__cta" href="#contact" (click)="closeMenu()">
+          Consultation
+          <span class="btn__chev" aria-hidden="true">→</span>
+        </a>
+      </div>
     </nav>
   </div>
 </header>

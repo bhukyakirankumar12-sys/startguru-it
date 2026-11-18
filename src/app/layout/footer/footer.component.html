@@ -1,10 +1,30 @@
 <footer class="footer" role="contentinfo">
   <div class="footer__top sg-container">
     <div class="footer__brand">
-      <div class="footer__logo">StarGuru IT</div>
+      <a href="#top" class="footer__brand-link" aria-label="StarGuru IT Home">
+        <img
+          src="/images/starguru-logo-horizontal-white-text.png"
+          alt="StarGuru IT — Build. Transform. Grow."
+          class="footer__logo-img"
+          width="230"
+          height="80"
+          loading="lazy"
+        />
+      </a>
+      <p class="footer__tagline">Build. Transform. Grow.</p>
       <p class="footer__lead">
-        Global technology consulting and engineering for enterprises that demand velocity with governance.
+        StarGuru architects, modernizes, and operates mission-critical enterprise platforms. Strategy that becomes shipped software.
       </p>
+      <div class="footer__meta-info">
+        <div class="footer__badge">★ Minority Women-Owned Small Business</div>
+        <div class="footer__contact-line">
+          <span>📍 Cumming, Georgia, US</span>
+          <span>•</span>
+          <a class="footer__contact-link" href="mailto:starguru.corp@gmail.com">starguru.corp@gmail.com</a>
+          <span>•</span>
+          <a class="footer__contact-link" href="tel:+16789954883">+1 678 995 4883</a>
+        </div>
+      </div>
       <div class="footer__social" aria-label="Social media">
         @for (s of social; track s.href) {
           <a
@@ -63,7 +83,7 @@
 
   <div class="footer__bottom">
     <div class="sg-container footer__bottom-inner">
-      <small>© {{ year }} StarGuru IT. All Rights Reserved.</small>
+      <small>© {{ year }} StarGuru. All Rights Reserved. · Cumming, Georgia US · Minority Women-Owned Small Business</small>
     </div>
   </div>
 </footer>

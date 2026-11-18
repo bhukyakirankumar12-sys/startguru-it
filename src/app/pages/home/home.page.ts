@@ -8,7 +8,6 @@ import { HeroSectionComponent } from './sections/hero-section/hero-section.compo
 import { IndustriesSectionComponent } from './sections/industries-section/industries-section.component';
 import { InsightsSectionComponent } from './sections/insights-section/insights-section.component';
 import { ServicesSectionComponent } from './sections/services-section/services-section.component';
-import { TestimonialsSectionComponent } from './sections/testimonials-section/testimonials-section.component';
 import { WhyUsSectionComponent } from './sections/why-us-section/why-us-section.component';
 
 @Component({
@@ -22,7 +21,6 @@ import { WhyUsSectionComponent } from './sections/why-us-section/why-us-section.
     CaseStudiesSectionComponent,
     WhyUsSectionComponent,
     InsightsSectionComponent,
-    TestimonialsSectionComponent,
     CareersSectionComponent,
     ContactSectionComponent,
   ],
@@ -34,20 +32,20 @@ export class HomePage implements OnInit {
   private readonly meta = inject(Meta);
 
   ngOnInit(): void {
-    this.title.setTitle('StarGuru IT | Enterprise AI, Cloud & Digital Engineering');
+    this.title.setTitle('StarGuru | Enterprise AI, Cloud, Data & Digital Engineering');
     this.meta.updateTag({
       name: 'description',
       content:
-        'StarGuru IT is an enterprise technology partner delivering AI, cloud, data, and digital engineering programs for global organizations.',
+        'StarGuru architects, modernizes, and operates mission-critical enterprise platforms. Strategy that becomes shipped software. Build. Transform. Grow.',
     });
     this.meta.updateTag({
       property: 'og:title',
-      content: 'StarGuru IT | Enterprise AI, Cloud & Digital Engineering',
+      content: 'StarGuru | Enterprise AI, Cloud, Data & Digital Engineering',
     });
     this.meta.updateTag({
       property: 'og:description',
       content:
-        'Build intelligent platforms with an AI-first, cloud-native engineering partner trusted by enterprises worldwide.',
+        'StarGuru architects, modernizes, and operates mission-critical enterprise platforms. Strategy that becomes shipped software.',
     });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
   }

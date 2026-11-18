@@ -22,10 +22,11 @@
   height: 2px;
   background: linear-gradient(
     90deg,
-    rgba(37, 99, 235, 0),
-    rgba(37, 99, 235, 0.35),
-    rgba(6, 182, 212, 0.35),
-    rgba(37, 99, 235, 0)
+    rgba(201, 162, 39, 0),
+    rgba(11, 31, 68, 0.25),
+    rgba(201, 162, 39, 0.45),
+    rgba(11, 31, 68, 0.25),
+    rgba(201, 162, 39, 0)
   );
   pointer-events: none;
 }
@@ -42,6 +43,14 @@
   padding: var(--sg-space-3);
   box-shadow: var(--sg-shadow-sm);
   min-height: 190px;
+  transition:
+    transform var(--sg-duration) var(--sg-ease-out),
+    border-color var(--sg-duration) var(--sg-ease-out);
+}
+
+.delivery__node:hover {
+  transform: translateY(-2px);
+  border-color: var(--sg-color-gold-border);
 }
 
 .delivery__icon {
@@ -52,31 +61,32 @@
   place-items: center;
   color: #fff;
   margin-bottom: var(--sg-space-2);
+  box-shadow: 0 6px 16px rgba(11, 31, 68, 0.15);
   animation: delivery-pulse 2.8s ease-in-out infinite;
 }
 
 .delivery__node[data-step='discover'] .delivery__icon {
-  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  background: linear-gradient(135deg, #0b1f44, #1b3b78);
   animation-delay: 0s;
 }
 .delivery__node[data-step='research'] .delivery__icon {
-  background: linear-gradient(135deg, #6366f1, #2563eb);
+  background: linear-gradient(135deg, #0b1f44, #c9a227);
   animation-delay: 0.15s;
 }
 .delivery__node[data-step='architect'] .delivery__icon {
-  background: linear-gradient(135deg, #0f172a, #334155);
+  background: linear-gradient(135deg, #071530, #0b1f44);
   animation-delay: 0.3s;
 }
 .delivery__node[data-step='build'] .delivery__icon {
-  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  background: linear-gradient(135deg, #132d5e, #1f4c96);
   animation-delay: 0.45s;
 }
 .delivery__node[data-step='test'] .delivery__icon {
-  background: linear-gradient(135deg, #10b981, #06b6d4);
+  background: linear-gradient(135deg, #163266, #c9a227);
   animation-delay: 0.6s;
 }
 .delivery__node[data-step='deploy'] .delivery__icon {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  background: linear-gradient(135deg, #c9a227, #b38e1f);
   animation-delay: 0.75s;
 }
 
@@ -104,14 +114,15 @@
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--sg-color-primary);
+  color: var(--sg-color-gold);
 }
 
 .delivery__title {
   margin: 0 0 8px;
   font-size: 1.05rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.02em;
+  color: var(--sg-color-navy);
 }
 
 .delivery__sub {

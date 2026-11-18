@@ -41,17 +41,48 @@
 .contact__value {
   margin: 0;
   font-weight: 800;
-  color: var(--sg-color-secondary);
+  color: var(--sg-color-navy);
+}
+
+.contact__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(201, 162, 39, 0.14);
+  border: 1px solid var(--sg-color-gold-border);
+  color: var(--sg-color-navy);
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+.contact__map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--sg-color-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--sg-duration) var(--sg-ease-out);
+}
+
+.contact__map-link:hover {
+  color: var(--sg-color-gold-hover);
 }
 
 .contact__link {
   margin: 0;
   font-weight: 800;
-  color: var(--sg-color-primary);
+  color: var(--sg-color-navy);
+  transition: color var(--sg-duration) var(--sg-ease-out);
 }
 
 .contact__link:hover {
-  color: var(--sg-color-primary-hover);
+  color: var(--sg-color-gold);
 }
 
 .contact__cta {
@@ -60,13 +91,17 @@
   justify-content: center;
   padding: 14px 18px;
   border-radius: 12px;
-  background: var(--sg-color-secondary);
+  background: var(--sg-color-navy);
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
+  border: 1px solid var(--sg-color-gold-border);
+  transition: all var(--sg-duration) var(--sg-ease-out);
 }
 
 .contact__cta:hover {
-  background: #111c2e;
+  background: var(--sg-color-navy-light);
+  border-color: var(--sg-color-gold);
+  transform: translateY(-1px);
 }
 
 .contact-form {
@@ -138,8 +173,8 @@
 
 .field__input:focus {
   outline: none;
-  border-color: rgba(37, 99, 235, 0.45);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  border-color: var(--sg-color-gold);
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.18);
 }
 
 .field__input--area {
@@ -156,21 +191,25 @@
 .contact-form__submit {
   margin-top: var(--sg-space-3);
   width: 100%;
-  border: 0;
+  border: 1px solid var(--sg-color-gold-border);
   border-radius: 12px;
   padding: 14px 16px;
-  background: var(--sg-color-primary);
+  background: var(--sg-color-navy);
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 14px 30px rgba(11, 31, 68, 0.22);
   transition:
     background var(--sg-duration) var(--sg-ease-out),
+    border-color var(--sg-duration) var(--sg-ease-out),
+    box-shadow var(--sg-duration) var(--sg-ease-out),
     transform var(--sg-duration) var(--sg-ease-out);
 }
 
 .contact-form__submit:hover {
-  background: var(--sg-color-primary-hover);
+  background: var(--sg-color-navy-light);
+  border-color: var(--sg-color-gold);
+  box-shadow: 0 14px 30px rgba(201, 162, 39, 0.28);
   transform: translateY(-1px);
 }
 

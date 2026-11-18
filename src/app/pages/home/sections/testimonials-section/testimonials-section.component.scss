@@ -36,7 +36,8 @@
 }
 
 .tmo__btn:hover {
-  border-color: rgba(37, 99, 235, 0.35);
+  border-color: var(--sg-color-gold);
+  color: var(--sg-color-gold);
   transform: translateY(-1px);
 }
 
@@ -47,7 +48,7 @@
 .tmo__quote {
   font-size: 3rem;
   line-height: 1;
-  color: rgba(37, 99, 235, 0.35);
+  color: var(--sg-color-gold-border);
   font-weight: 900;
   margin-bottom: 6px;
 }
@@ -86,13 +87,13 @@
 }
 
 .tmo__stars {
-  color: #f59e0b;
+  color: var(--sg-color-gold);
   letter-spacing: 3px;
   font-size: 1.1rem;
 }
 
 .tmo__star--off {
-  color: rgba(245, 158, 11, 0.25);
+  color: rgba(201, 162, 39, 0.25);
 }
 
 .tmo__dots {
@@ -105,15 +106,16 @@
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  border: 1px solid rgba(37, 99, 235, 0.25);
-  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid var(--sg-color-gold-border);
+  background: rgba(201, 162, 39, 0.15);
   cursor: pointer;
+  transition: all var(--sg-duration) var(--sg-ease-out);
 }
 
 .tmo__dot--on {
   width: 28px;
-  background: var(--sg-color-primary);
-  border-color: rgba(37, 99, 235, 0.35);
+  background: var(--sg-color-gold);
+  border-color: var(--sg-color-gold);
 }
 
 @media (max-width: 640px) {

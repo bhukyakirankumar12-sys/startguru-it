@@ -27,7 +27,7 @@
 .insight-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--sg-shadow-lg);
-  border-color: rgba(37, 99, 235, 0.22);
+  border-color: var(--sg-color-gold-border);
 }
 
 .insight-card__meta {
@@ -36,21 +36,27 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--sg-color-text-muted);
+  color: var(--sg-color-gold);
 }
 
 .insight-card__title {
   margin: 0;
   font-size: 1.25rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.25;
+  color: var(--sg-color-navy);
 }
 
 .insight-card__cta {
   margin-top: 6px;
-  font-weight: 900;
-  color: var(--sg-color-primary);
+  font-weight: 800;
+  color: var(--sg-color-navy);
+  transition: color var(--sg-duration) var(--sg-ease-out);
+}
+
+.insight-card:hover .insight-card__cta {
+  color: var(--sg-color-gold);
 }
 
 @media (max-width: 900px) {

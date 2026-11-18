@@ -23,57 +23,57 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const CLIENT_LOGOS: ClientLogo[] = [
-  { name: 'Microsoft' },
-  { name: 'Azure' },
-  { name: 'ServiceNow' },
-  { name: '.NET' },
-  { name: 'Oracle' },
   { name: 'AWS' },
+  { name: 'Azure' },
   { name: 'Google Cloud' },
-  { name: 'SAP' },
+  { name: 'Salesforce' },
+  { name: 'ServiceNow' },
+  { name: 'Python' },
+  { name: 'Java' },
+  { name: '.NET' },
 ];
 
 export const SERVICES: ServiceCard[] = [
   {
-    id: 'servicenow',
-    title: 'ServiceNow CSM & Platform',
+    id: 'cloud',
+    title: 'Cloud Engineering & Migration',
     description:
-      'Enterprise ServiceNow implementations for CSM, Case Management, Major Incident, SLAs, and UI Policies. End-to-end platform engineering and workflow automation.',
-    icon: 'servicenow',
-  },
-  {
-    id: 'azure',
-    title: 'Azure Cloud Engineering',
-    description:
-      'App Services, Azure SQL, Service Bus, Key Vault, and DevOps pipelines. Migrate legacy .NET monoliths to event-driven cloud architectures with security-by-design.',
+      'AWS, Azure and Google Cloud. Architect, migrate, and optimize scalable cloud foundations with security-by-design and transparent cost governance.',
     icon: 'cloud',
   },
   {
-    id: 'dotnet',
-    title: '.NET Application Modernization',
+    id: 'enterprise',
+    title: 'Enterprise Platforms',
     description:
-      'Modernize legacy C#, VB.NET, ASP.NET, and WCF applications to Angular + ASP.NET Core. Clean architecture, REST APIs, and measurable performance gains.',
+      'Salesforce, ServiceNow and other CRM/ITSM solutions. Design and deploy case management, major incident workflows, SLAs, and deep platform automation.',
+    icon: 'servicenow',
+  },
+  {
+    id: 'appdev',
+    title: 'Application Development & Modernization',
+    description:
+      'Python, Java, .NET and modern web frameworks. Modernize legacy monoliths into cloud-native architectures with clean APIs and measurable performance.',
     icon: 'enterprise',
   },
   {
     id: 'data',
-    title: 'Data Engineering & BI',
+    title: 'Data Engineering & Analytics',
     description:
-      'SQL Server, SSIS, and Crystal Reports to modern data platforms. Build executive-grade analytics and lakehouses that turn fragmented data into decisions.',
+      'Modern data platforms, BI and reporting. Transform fragmented operational data into executive-grade analytics, lakehouses, and strategic decisions.',
     icon: 'data',
   },
   {
     id: 'ai',
     title: 'AI & Intelligent Automation',
     description:
-      'Responsible GenAI, copilots, and intelligent automation engineered for regulated, high-scale enterprise environments using Azure AI and Copilot.',
+      'GenAI, copilots, and intelligent process automation engineered for regulated, high-scale enterprise environments with governance guardrails.',
     icon: 'ai',
   },
   {
     id: 'devops',
-    title: 'DevOps & CI/CD',
+    title: 'DevOps & Quality Engineering',
     description:
-      'Azure DevOps, CI/CD pipelines, observability with Application Insights, and SRE practices that accelerate delivery without compromising stability.',
+      'CI/CD, automated testing, observability, and SRE practices that accelerate velocity, repeatability, and mission-critical stability.',
     icon: 'devops',
   },
 ];
@@ -163,33 +163,39 @@ export const CASE_STUDIES: CaseStudy[] = [
 export const VALUE_PROPS: ValueCard[] = [
   {
     id: 'v1',
-    title: '16+ Years Industry Experience',
-    description: 'Deep delivery experience across enterprise .NET, Azure, ServiceNow, and complex program modernization.',
+    title: '16+ Years Delivery Experience',
+    description:
+      'Proven track record architecting, modernizing, and operating platforms across AWS, Azure, GCP, Salesforce, ServiceNow, and modern cloud stacks.',
   },
   {
     id: 'v2',
-    title: 'ServiceNow CSM Specialists',
-    description: 'Certified ServiceNow practitioners with hands-on CSM, case management, and platform automation expertise.',
+    title: 'Senior Practitioner Model',
+    description:
+      'As a focused team of senior consultants (2-10 employees), you work directly with experienced engineers, not layers of account managers.',
   },
   {
     id: 'v3',
-    title: 'Azure Cloud-Native Architecture',
-    description: 'Patterns that scale: Azure App Services, Service Bus, SQL, Key Vault, and DevOps with security-by-design.',
+    title: 'Minority & Women-Owned Small Business',
+    description:
+      'Proudly a Minority Women-Owned Small Business headquartered in Cumming, Georgia, bringing diversity, precision, and agility to enterprise delivery.',
   },
   {
     id: 'v4',
-    title: 'Agile & Transparent Delivery',
-    description: 'Executive-ready reporting with measurable milestones, JIRA/ Azure DevOps traceability, and clear risk management.',
+    title: 'Strategy That Becomes Shipped Software',
+    description:
+      'We combine executive-level consulting discipline with hands-on engineering—so strategy becomes shipped software, not slideware.',
   },
   {
     id: 'v5',
-    title: 'Legacy to Cloud Modernization',
-    description: 'Proven track record modernizing .NET monoliths into event-driven cloud architectures with zero-downtime cutovers.',
+    title: 'AI-Powered Delivery Lifecycle',
+    description:
+      'Human judgment blended with AI acceleration from discovery and architecture to AI-assisted build, validation, and progressive rollout.',
   },
   {
     id: 'v6',
-    title: 'Dedicated Support & Partnership',
-    description: 'Long-term enablement: run, optimize, and continuously modernize with your teams across onshore/offshore models.',
+    title: 'Regulated & Mission-Critical Focus',
+    description:
+      'Deep domain expertise serving Healthcare, Finance & Banking, Aviation & Airlines, Manufacturing, Logistics, and Telecom with strict governance.',
   },
 ];
 
@@ -280,10 +286,48 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const HERO_FLOATING: HeroFloatingCard[] = [
-  { id: 'c1', label: 'ServiceNow CSM', angle: -12, radius: 118, delay: '0s' },
-  { id: 'c2', label: 'Azure Cloud', angle: 38, radius: 124, delay: '0.2s' },
-  { id: 'c3', label: '.NET Modernization', angle: 112, radius: 108, delay: '0.35s' },
-  { id: 'c4', label: 'DevOps & CI/CD', angle: 168, radius: 130, delay: '0.1s' },
-  { id: 'c5', label: 'Data Engineering', angle: -110, radius: 120, delay: '0.25s' },
-  { id: 'c6', label: 'Flight Ops Systems', angle: -52, radius: 128, delay: '0.4s' },
+  { id: 'c1', label: 'Cloud: AWS · Azure · GCP', angle: -12, radius: 118, delay: '0s' },
+  { id: 'c2', label: 'Salesforce & ServiceNow', angle: 38, radius: 124, delay: '0.2s' },
+  { id: 'c3', label: 'Python · Java · .NET', angle: 112, radius: 108, delay: '0.35s' },
+  { id: 'c4', label: 'DevOps & Quality Eng', angle: 168, radius: 130, delay: '0.1s' },
+  { id: 'c5', label: 'Data Engineering & BI', angle: -110, radius: 120, delay: '0.25s' },
+  { id: 'c6', label: 'GenAI & Automation', angle: -52, radius: 128, delay: '0.4s' },
 ];
+
+export const COMPANY_INFO = {
+  name: 'StarGuru',
+  tagline: 'Build. Transform. Grow.',
+  headline: 'Enterprise AI, Cloud, Data & Digital Engineering: strategy that becomes shipped software.',
+  overview:
+    'StarGuru architects, modernizes, and operates mission-critical enterprise platforms. We combine executive-level consulting discipline with hands-on engineering, so strategy becomes shipped software, not slideware. With 16+ years of delivery experience, we help enterprises in regulated, high-scale industries modernize with confidence. As a focused team of senior consultants, you work directly with experienced engineers, not layers of account managers.',
+  phone: '+1 678 995 4883',
+  email: 'starguru.corp@gmail.com',
+  address: '7040 Majors Rd, Cumming, Georgia 30040',
+  headquarters: 'Cumming, Georgia, US',
+  mapUrl: 'https://www.bing.com/maps?where=Cumming%2C%20Georgia%2C%20US',
+  companySize: '2-10 employees',
+  industry: 'IT Services and IT Consulting',
+  businessClassification: 'Minority & Women-Owned Small Business',
+  specialties: [
+    'Cloud Migration',
+    'Data Engineering',
+    'Business Intelligence',
+    'Generative AI',
+    'Intelligent Automation',
+    'DevOps',
+    'CI/CD',
+    'Enterprise Architecture',
+    'Digital Transformation',
+    'IT Consulting',
+    'Cloud Engineering',
+    'AWS',
+    'Azure',
+    'Salesforce',
+    'ServiceNow',
+    'Python',
+    'Application Development',
+    'Application Modernization',
+    'Quality Engineering',
+    'IT Staffing & Consulting',
+  ],
+};

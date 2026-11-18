@@ -1,0 +1,19 @@
+StarGuru logo kit
+
+Colors
+  Gold (star, accents):  #C9A227   rgb(201,162,39)
+  Navy (text, dark bg):  #0B1F44   rgb(11,31,68)
+  White:                 #FFFFFF
+Font: Poppins (Google Fonts) - Bold for the name, Medium for the tagline
+Tagline: Build. Transform. Grow.
+
+Files (all PNGs have transparent backgrounds unless noted)
+  starguru-logo-horizontal.png              Header/navbar on light backgrounds
+  starguru-logo-horizontal-white-text.png   Header/footer on dark (navy) backgrounds
+  starguru-logo-stacked.png                 Hero sections, about page, documents
+  starguru-logo-stacked-white-text.png      Stacked version for dark backgrounds
+  starguru-icon-gold.png                    Star icon only (1024x1024)
+  starguru-icon-navy-bg.png                 Star on navy square - app icon / social avatar
+  favicon.ico, favicon-512.png              Browser tab icon
+
+Usage: keep clear space around the logo of at least half the star's width; don't stretch, recolor or add effects.

@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -24,6 +25,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   font-family: var(--sg-font-sans);
   font-size: var(--sg-text-body);
   line-height: 1.6;
@@ -52,7 +54,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--sg-color-primary);
+  outline: 2px solid var(--sg-color-gold);
   outline-offset: 2px;
 }
 
@@ -95,19 +97,20 @@ button {
 
 .sg-kicker {
   font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--sg-color-primary);
+  color: var(--sg-color-gold);
 }
 
 .sg-section-title {
+  font-family: var(--sg-font-heading);
   font-size: var(--sg-text-section);
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0 0 var(--sg-space-3);
-  color: var(--sg-color-text);
+  color: var(--sg-color-navy);
 }
 
 .sg-section-lead {

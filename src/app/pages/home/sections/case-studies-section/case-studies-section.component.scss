@@ -8,12 +8,13 @@
 
 .cases__all {
   font-weight: 800;
-  color: var(--sg-color-primary);
+  color: var(--sg-color-navy);
   white-space: nowrap;
+  transition: color var(--sg-duration) var(--sg-ease-out);
 }
 
 .cases__all:hover {
-  color: var(--sg-color-primary-hover);
+  color: var(--sg-color-gold);
 }
 
 .cases__grid {
@@ -28,16 +29,18 @@
   overflow: hidden;
   border: 1px solid rgba(226, 232, 240, 0.9);
   min-height: 460px;
-  background: #0f172a;
+  background: var(--sg-color-navy);
   box-shadow: var(--sg-shadow-md);
   transition:
     transform var(--sg-duration) var(--sg-ease-out),
-    box-shadow var(--sg-duration) var(--sg-ease-out);
+    box-shadow var(--sg-duration) var(--sg-ease-out),
+    border-color var(--sg-duration) var(--sg-ease-out);
 }
 
 .case-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--sg-shadow-lg);
+  border-color: var(--sg-color-gold-border);
 }
 
 .case-card__media {
@@ -60,7 +63,7 @@
 .case-card__scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.78) 62%, #0f172a 100%);
+  background: linear-gradient(180deg, rgba(11, 31, 68, 0.15) 0%, rgba(11, 31, 68, 0.82) 60%, #0b1f44 100%);
 }
 
 .case-card__body {
@@ -75,20 +78,21 @@
 .case-card__tag {
   display: inline-flex;
   margin: 0 0 10px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.75rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(201, 162, 39, 0.22);
+  border: 1px solid var(--sg-color-gold-border);
+  color: #fff;
 }
 
 .case-card__title {
   margin: 0 0 10px;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.02em;
 }
 
@@ -102,15 +106,22 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 14px;
+  padding: 12px 16px;
   border-radius: 12px;
   background: #fff;
-  color: var(--sg-color-secondary);
-  font-weight: 900;
+  color: var(--sg-color-navy);
+  font-weight: 800;
+  border: 1px solid var(--sg-color-gold-border);
+  transition:
+    background var(--sg-duration) var(--sg-ease-out),
+    color var(--sg-duration) var(--sg-ease-out),
+    border-color var(--sg-duration) var(--sg-ease-out);
 }
 
 .case-card__btn:hover {
-  background: #f8fafc;
+  background: var(--sg-color-navy-dark);
+  color: #fff;
+  border-color: var(--sg-color-gold);
 }
 
 @media (max-width: 1024px) {

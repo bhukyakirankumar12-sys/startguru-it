@@ -1,13 +1,30 @@
-// StarGuru IT — enterprise design tokens (8px grid)
+// StarGuru IT — enterprise brand design tokens
 :root {
-  --sg-color-primary: #2563eb;
-  --sg-color-primary-hover: #1d4ed8;
-  --sg-color-secondary: #0f172a;
-  --sg-color-accent: #06b6d4;
+  // Brand Identity Colors (from StarGuru Logo Kit)
+  --sg-color-navy: #0b1f44;
+  --sg-color-navy-dark: #071530;
+  --sg-color-navy-light: #163266;
+  --sg-color-navy-surface: #10264f;
+
+  --sg-color-gold: #c9a227;
+  --sg-color-gold-hover: #b38e1f;
+  --sg-color-gold-light: rgba(201, 162, 39, 0.12);
+  --sg-color-gold-border: rgba(201, 162, 39, 0.32);
+  --sg-color-gold-glow: rgba(201, 162, 39, 0.25);
+
+  // Functional Semantic Palette
+  --sg-color-primary: #0b1f44;
+  --sg-color-primary-hover: #163266;
+  --sg-color-secondary: #0b1f44;
+  --sg-color-accent: #c9a227;
+  --sg-color-accent-hover: #b38e1f;
+
   --sg-color-bg: #ffffff;
   --sg-color-section: #f8fafc;
+  --sg-color-section-warm: #fdfbf7;
   --sg-color-border: #e2e8f0;
-  --sg-color-text: #0f172a;
+  --sg-color-border-subtle: #f1f5f9;
+  --sg-color-text: #0b1f44;
   --sg-color-text-muted: #475569;
   --sg-color-white: #ffffff;
 
@@ -15,12 +32,14 @@
   --sg-radius-md: 12px;
   --sg-radius-sm: 8px;
 
-  --sg-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --sg-shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
-  --sg-shadow-lg: 0 24px 48px rgba(15, 23, 42, 0.12);
-  --sg-shadow-glass: 0 12px 40px rgba(37, 99, 235, 0.12);
+  --sg-shadow-sm: 0 1px 3px rgba(11, 31, 68, 0.06);
+  --sg-shadow-md: 0 8px 24px rgba(11, 31, 68, 0.08);
+  --sg-shadow-lg: 0 24px 48px rgba(11, 31, 68, 0.14);
+  --sg-shadow-glass: 0 12px 40px rgba(11, 31, 68, 0.08);
+  --sg-shadow-gold: 0 10px 24px rgba(201, 162, 39, 0.22);
 
-  --sg-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --sg-font-sans: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --sg-font-heading: 'Poppins', sans-serif;
 
   --sg-text-hero: clamp(2.5rem, 4vw + 1.5rem, 4rem);
   --sg-text-section: clamp(2rem, 2.5vw + 1.25rem, 2.625rem);
@@ -37,7 +56,7 @@
   --sg-space-6: 48px;
   --sg-space-8: 64px;
   --sg-space-10: 80px;
-  --sg-header-h: 88px;
+  --sg-header-h: 76px;
 
   --sg-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --sg-duration: 240ms;
