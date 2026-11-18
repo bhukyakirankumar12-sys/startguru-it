@@ -286,12 +286,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const HERO_FLOATING: HeroFloatingCard[] = [
-  { id: 'c1', label: 'Cloud: AWS · Azure · GCP', angle: -12, radius: 118, delay: '0s' },
-  { id: 'c2', label: 'Salesforce & ServiceNow', angle: 38, radius: 124, delay: '0.2s' },
-  { id: 'c3', label: 'Python · Java · .NET', angle: 112, radius: 108, delay: '0.35s' },
-  { id: 'c4', label: 'DevOps & Quality Eng', angle: 168, radius: 130, delay: '0.1s' },
-  { id: 'c5', label: 'Data Engineering & BI', angle: -110, radius: 120, delay: '0.25s' },
-  { id: 'c6', label: 'GenAI & Automation', angle: -52, radius: 128, delay: '0.4s' },
+  { id: 'c1', label: 'Cloud: AWS · Azure · GCP', angle: 0, radius: 130, delay: '0s' },
+  { id: 'c2', label: 'Salesforce & ServiceNow', angle: 60, radius: 134, delay: '0.2s' },
+  { id: 'c3', label: 'Python · Java · .NET', angle: 120, radius: 134, delay: '0.35s' },
+  { id: 'c4', label: 'DevOps & Quality Eng', angle: 180, radius: 130, delay: '0.1s' },
+  { id: 'c5', label: 'Data Engineering & BI', angle: 240, radius: 134, delay: '0.25s' },
+  { id: 'c6', label: 'GenAI & Automation', angle: 300, radius: 134, delay: '0.4s' },
 ];
 
 export const COMPANY_INFO = {

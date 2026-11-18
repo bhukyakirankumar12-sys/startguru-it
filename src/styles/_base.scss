@@ -88,7 +88,7 @@ button {
 }
 
 .sg-section {
-  padding-block: clamp(var(--sg-space-6), 8vw, var(--sg-space-10));
+  padding-block: clamp(36px, 4.5vw, var(--sg-space-8));
 }
 
 .sg-section--alt {
@@ -96,26 +96,28 @@ button {
 }
 
 .sg-kicker {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--sg-color-gold);
+  margin-bottom: 6px;
 }
 
 .sg-section-title {
   font-family: var(--sg-font-heading);
   font-size: var(--sg-text-section);
-  line-height: 1.15;
+  line-height: 1.18;
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin: 0 0 var(--sg-space-3);
+  margin: 0 0 var(--sg-space-2);
   color: var(--sg-color-navy);
 }
 
 .sg-section-lead {
   margin: 0;
-  max-width: 52ch;
+  max-width: 56ch;
   color: var(--sg-color-text-muted);
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }

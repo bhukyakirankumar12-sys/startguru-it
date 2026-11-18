@@ -1,88 +1,225 @@
-<section id="top" class="hero sg-section" aria-labelledby="hero-title">
-  <div class="hero__grid sg-container">
-    <div class="hero__copy">
-      <div class="hero__badges">
-        <span class="hero__badge">BUILD • TRANSFORM • GROW</span>
-        <span class="hero__badge hero__badge--highlight">★ MINORITY WOMEN-OWNED SMALL BUSINESS</span>
+<section id="top" class="hero" aria-labelledby="hero-company-name">
+  <div class="sg-container hero__wrapper">
+    <!-- Official LinkedIn-Matched Header Card -->
+    <div class="linkedin-card">
+      <!-- 1. Deep Navy Cover Banner with Centered Logo & Right Services -->
+      <div class="linkedin-cover">
+        <div class="linkedin-cover__center">
+          <img
+            src="/images/starguru-logo-horizontal-white-text.png"
+            alt="StarGuru — Build. Transform. Grow."
+            class="linkedin-cover__logo"
+            width="250"
+            height="87"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="linkedin-cover__services" aria-label="Core Competencies">
+          <div class="linkedin-cover__service-line">Enterprise AI · Cloud · Data</div>
+          <div class="linkedin-cover__service-line">Digital Engineering · IT Consulting</div>
+        </div>
+        <div class="linkedin-cover__gold-stripe" aria-hidden="true"></div>
       </div>
-      <h1 id="hero-title" class="hero__title">
-        Enterprise AI, Cloud, Data & Digital Engineering
-        <span class="hero__title-accent">Strategy that becomes shipped software.</span>
-      </h1>
-      <p class="hero__sub">
-        StarGuru architects, modernizes, and operates mission-critical enterprise platforms. We combine executive-level consulting discipline with hands-on engineering, so strategy becomes shipped software, not slideware. With 16+ years of delivery experience, we help enterprises in regulated, high-scale industries modernize with confidence.
-      </p>
-      <p class="hero__meta-lead">
-        <strong>Senior Practitioner Model:</strong> As a focused team of senior consultants (2-10 practitioners), you work directly with experienced engineers, not layers of account managers. Headquartered in Cumming, Georgia.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#contact">
-          Schedule Consultation
-          <span class="hero__action-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="btn btn--secondary" href="#services">
-          <span class="hero__play" aria-hidden="true">▶</span>
-          Explore What We Do
-        </a>
-      </div>
-      <div class="hero__trust">
-        <span class="hero__trust-dot" aria-hidden="true">★</span>
-        <p class="hero__trust-text">IT Services & Consulting · Cumming, GA · 16+ Years Delivery Track Record</p>
-      </div>
-      <div class="hero__logos" aria-label="Technology ecosystem partners">
-        @for (logo of logos; track logo.name) {
-          <span class="hero__logo-pill">{{ logo.name }}</span>
-        }
+
+      <!-- 2. Profile Area with Overlapping Avatar Badge and Executive Identity -->
+      <div class="linkedin-profile">
+        <div class="linkedin-profile__header-row">
+          <!-- Overlapping Avatar Box -->
+          <div class="linkedin-avatar" role="img" aria-label="StarGuru Emblem">
+            <img
+              src="/images/starguru-icon-navy-bg.png"
+              alt="StarGuru Gold Star"
+              class="linkedin-avatar__img"
+              width="90"
+              height="90"
+            />
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="linkedin-profile__actions">
+            <a class="btn btn--primary" href="#contact">
+              Schedule Consultation
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--secondary" href="tel:+16789954883" aria-label="Call +1 678 995 4883">
+              <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              (678) 995-4883
+            </a>
+            <a
+              class="btn btn--ghost"
+              href="https://www.bing.com/maps?where=Cumming%2C%20Georgia%2C%20US"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get directions to Cumming, Georgia US on Bing Maps"
+            >
+              <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Cumming, GA
+            </a>
+          </div>
+        </div>
+
+        <!-- Identity Title, Tagline & Metadata -->
+        <div class="linkedin-profile__info">
+          <div class="linkedin-profile__title-wrap">
+            <h1 id="hero-company-name" class="linkedin-profile__title">StarGuru</h1>
+            <span class="badge-mwob" title="Certified Minority & Women-Owned Small Business">
+              <span class="badge-mwob__star" aria-hidden="true">★</span>
+              Minority Women-Owned Small Business
+            </span>
+          </div>
+
+          <p class="linkedin-profile__tagline">
+            Enterprise AI, Cloud, Data &amp; Digital Engineering: strategy that becomes shipped software.
+          </p>
+
+          <div class="linkedin-profile__meta">
+            <span class="meta-item">IT Services and IT Consulting</span>
+            <span class="meta-sep">·</span>
+            <span class="meta-item">Cumming, Georgia</span>
+            <span class="meta-sep">·</span>
+            <span class="meta-item">2-10 employees</span>
+            <span class="meta-sep">·</span>
+            <span class="meta-item">16+ Years Delivery Experience</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__stage">
-        <div class="hero__glow"></div>
-        <div class="hero__orbit">
-          @for (card of floating; track card.id) {
-            <div
-              class="hero__float"
-              [style.transform]="'rotate(' + card.angle + 'deg) translateY(-' + card.radius + 'px)'"
-            >
-              <div class="hero__float-bob" [style.--delay]="card.delay">
-                <div
-                  class="hero__float-inner"
-                  [style.transform]="'rotate(' + -card.angle + 'deg)'"
-                >
-                  {{ card.label }}
+    <!-- Executive Overview & Visual Interactive Showcase -->
+    <div class="hero__content-grid">
+      <!-- Left Column: Executive Overview narrative & What We Do -->
+      <div class="hero__overview-col">
+        <div class="overview-box">
+          <div class="overview-box__header">
+            <h2 class="overview-box__heading">Executive Overview</h2>
+            <span class="overview-box__tagline">BUILD • TRANSFORM • GROW</span>
+          </div>
+
+          <p class="overview-box__text">
+            StarGuru architects, modernizes, and operates mission-critical enterprise platforms. We combine executive-level consulting discipline with hands-on engineering, so strategy becomes shipped software, not slideware. With 16+ years of delivery experience, we help enterprises in regulated, high-scale industries modernize with confidence.
+          </p>
+
+          <!-- Senior Practitioner Callout -->
+          <div class="callout-card">
+            <div class="callout-card__tag">
+              <span class="callout-card__dot" aria-hidden="true">◆</span>
+              Senior Practitioner Model
+            </div>
+            <p class="callout-card__text">
+              As a focused team of senior consultants (2-10 practitioners), you work directly with experienced engineers, not layers of account managers. Headquartered in Cumming, Georgia.
+            </p>
+          </div>
+
+          <!-- AI Lifecycle Callout -->
+          <div class="callout-card callout-card--lifecycle">
+            <div class="callout-card__tag">
+              <span class="callout-card__dot" aria-hidden="true">★</span>
+              AI-Powered Delivery Lifecycle
+            </div>
+            <p class="callout-card__text">
+              Our AI-powered delivery lifecycle blends human judgment with AI acceleration, from discovery and architecture to AI-assisted build, validation, and progressive rollout, without compromising security, quality, or accountability.
+            </p>
+          </div>
+
+          <!-- What We Do: 6 Pillars from LinkedIn -->
+          <div class="what-we-do">
+            <div class="what-we-do__header">
+              <h3 class="what-we-do__title">What We Do</h3>
+              <a class="what-we-do__link" href="#services">View Full Track Details →</a>
+            </div>
+
+            <div class="what-we-do__grid">
+              @for (service of services; track service.id) {
+                <div class="service-pill">
+                  <span class="service-pill__star" aria-hidden="true">✦</span>
+                  <div class="service-pill__content">
+                    <span class="service-pill__title">{{ service.title }}</span>
+                    <span class="service-pill__desc">{{ service.description }}</span>
+                  </div>
                 </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: 3D Emblem, Capability Orbit & Ecosystem -->
+      <div class="hero__visual-col" aria-hidden="true">
+        <div class="visual-card">
+          <div class="visual-card__header">
+            <span class="visual-card__badge">STARGURU CORE</span>
+            <span class="visual-card__sub">Enterprise Cloud &amp; AI Engine</span>
+          </div>
+
+          <div class="hero__stage">
+            <div class="hero__glow"></div>
+            <div class="hero__orbit">
+              @for (card of floating; track card.id) {
+                <div
+                  class="hero__float"
+                  [style.transform]="'rotate(' + card.angle + 'deg) translateY(-' + card.radius + 'px)'"
+                >
+                  <div class="hero__float-bob" [style.--delay]="card.delay">
+                    <div
+                      class="hero__float-inner"
+                      [style.transform]="'rotate(' + -card.angle + 'deg)'"
+                    >
+                      {{ card.label }}
+                    </div>
+                  </div>
+                </div>
+              }
+            </div>
+            <div class="hero__cube" role="img" aria-label="StarGuru Emblem">
+              <div class="hero__cube-face hero__cube-face--front">
+                <img
+                  src="/images/starguru-icon-gold.png"
+                  alt="StarGuru Star"
+                  class="hero__cube-star"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="hero__cube-face hero__cube-face--right">
+                <img
+                  src="/images/starguru-icon-gold.png"
+                  alt="StarGuru Star"
+                  class="hero__cube-star"
+                  width="48"
+                  height="48"
+                />
+              </div>
+              <div class="hero__cube-face hero__cube-face--top">
+                <img
+                  src="/images/starguru-icon-gold.png"
+                  alt="StarGuru Star"
+                  class="hero__cube-star"
+                  width="48"
+                  height="48"
+                />
               </div>
             </div>
-          }
-        </div>
-        <div class="hero__cube" role="img" aria-label="StarGuru Emblem">
-          <div class="hero__cube-face hero__cube-face--front">
-            <img
-              src="/images/starguru-icon-gold.png"
-              alt="StarGuru Star"
-              class="hero__cube-star"
-              width="70"
-              height="70"
-            />
           </div>
-          <div class="hero__cube-face hero__cube-face--right">
-            <img
-              src="/images/starguru-icon-gold.png"
-              alt="StarGuru Star"
-              class="hero__cube-star"
-              width="70"
-              height="70"
-            />
+
+          <!-- Ecosystem Logos -->
+          <div class="ecosystem-box">
+            <div class="ecosystem-box__title">Technology Ecosystem</div>
+            <div class="ecosystem-box__pills">
+              @for (logo of logos; track logo.name) {
+                <span class="ecosystem-pill">{{ logo.name }}</span>
+              }
+            </div>
           </div>
-          <div class="hero__cube-face hero__cube-face--top">
-            <img
-              src="/images/starguru-icon-gold.png"
-              alt="StarGuru Star"
-              class="hero__cube-star"
-              width="70"
-              height="70"
-            />
+
+          <!-- Direct Inquiry Bar -->
+          <div class="inquiry-bar">
+            <span class="inquiry-bar__label">Direct Inquiries:</span>
+            <a class="inquiry-bar__email" href="mailto:starguru.corp@gmail.com">starguru.corp@gmail.com</a>
           </div>
         </div>
       </div>
