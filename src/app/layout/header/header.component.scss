@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--sg-space-2);
-  min-height: 66px;
+  min-height: 72px;
   max-width: var(--sg-max);
 }
 
@@ -46,11 +46,16 @@
 
 .brand__logo {
   display: block;
-  height: clamp(32px, 3.2vw, 38px);
+  height: clamp(40px, 4.2vw, 50px);
   width: auto;
-  max-width: min(200px, 44vw);
+  max-width: min(240px, 46vw);
   object-fit: contain;
   object-position: left center;
+  transition: transform var(--sg-duration) var(--sg-ease-out);
+}
+
+.brand:hover .brand__logo {
+  transform: scale(1.02);
 }
 
 .header__badge {

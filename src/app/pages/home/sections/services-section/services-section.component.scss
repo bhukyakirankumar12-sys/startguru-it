@@ -53,6 +53,10 @@
 .service-card__icon[data-tone='data'] {
   background: linear-gradient(135deg, #163266, #c9a227);
 }
+.service-card__icon[data-tone='servicenow'] {
+  background: linear-gradient(135deg, #0b1f44, #1d4ed8);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+}
 .service-card__icon[data-tone='transform'] {
   background: linear-gradient(135deg, #c9a227, #b38e1f);
 }

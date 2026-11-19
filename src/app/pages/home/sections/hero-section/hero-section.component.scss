@@ -30,34 +30,75 @@
   position: relative;
   background: #0B1F44;
   background-image:
-    radial-gradient(ellipse 600px 180px at 50% 0%, rgba(255, 255, 255, 0.05), transparent 70%),
+    radial-gradient(ellipse 600px 180px at 20% 0%, rgba(255, 255, 255, 0.05), transparent 70%),
     radial-gradient(circle at 90% 40%, rgba(201, 162, 39, 0.14), transparent 55%);
   border-radius: 13px 13px 0 0;
-  min-height: 152px;
-  padding: 24px 36px 32px;
+  min-height: 140px;
+  padding: 24px 36px 28px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 24px;
 }
 
-.linkedin-cover__center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.linkedin-cover__brand {
+  display: flex;
+  flex-direction: column;
+  margin-left: clamp(0px, 10vw, 126px);
+  max-width: 680px;
+  z-index: 2;
+}
+
+.linkedin-cover__title-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
-  pointer-events: none;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.linkedin-cover__logo {
-  height: clamp(52px, 6vw, 76px);
-  width: auto;
-  max-width: 300px;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+.linkedin-cover__title {
+  font-family: var(--sg-font-heading);
+  font-size: clamp(1.5rem, 2.2vw, 1.95rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.badge-mwob {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(201, 162, 39, 0.18);
+  color: #ffffff;
+  border: 1px solid var(--sg-color-gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-mwob__star {
+  color: var(--sg-color-gold);
+}
+
+.linkedin-cover__tagline {
+  margin: 6px 0 8px;
+  font-size: clamp(0.875rem, 1.1vw, 0.96875rem);
+  color: #F1F5F9;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.linkedin-cover__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.78125rem;
+  color: #CBD5E1;
+  font-weight: 500;
 }
 
 .linkedin-cover__services {
@@ -69,6 +110,7 @@
   line-height: 1.55;
   letter-spacing: 0.02em;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .linkedin-cover__service-line {
@@ -84,17 +126,17 @@
   background: var(--sg-color-gold);
 }
 
-// 2. Profile Area with Overlapping Avatar
+// 2. Profile Action Bar with Overlapping Avatar
 .linkedin-profile {
   position: relative;
-  padding: 0 32px 22px;
+  padding: 0 32px 16px;
   border-radius: 0 0 13px 13px;
   background: #ffffff;
 }
 
-.linkedin-profile__header-row {
+.linkedin-profile__bar {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
@@ -131,64 +173,8 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 14px;
-}
-
-// Profile Info Block
-.linkedin-profile__info {
-  margin-top: 12px;
-}
-
-.linkedin-profile__title-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.linkedin-profile__title {
-  font-family: var(--sg-font-heading);
-  font-size: clamp(1.5rem, 2.2vw, 1.95rem);
-  font-weight: 800;
-  color: var(--sg-color-navy);
-  margin: 0;
-  letter-spacing: -0.02em;
-}
-
-.badge-mwob {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--sg-color-navy);
-  color: #ffffff;
-  border: 1px solid var(--sg-color-gold);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.badge-mwob__star {
-  color: var(--sg-color-gold);
-}
-
-.linkedin-profile__tagline {
-  margin: 6px 0 8px;
-  font-size: clamp(0.9rem, 1.1vw, 1.025rem);
-  color: #1E293B;
-  font-weight: 500;
-  line-height: 1.45;
-}
-
-.linkedin-profile__meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 0.8125rem;
-  color: #64748B;
-  font-weight: 500;
+  margin-top: 8px;
+  margin-left: auto;
 }
 
 .meta-sep {
@@ -682,30 +668,26 @@
 
   .linkedin-cover {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 24px 20px 28px;
-    gap: 12px;
-    justify-content: center;
+    align-items: flex-start;
+    padding: 22px 20px 26px;
+    gap: 14px;
   }
 
-  .linkedin-cover__center {
-    position: static;
-    transform: none;
-    margin-bottom: 6px;
+  .linkedin-cover__brand {
+    margin-left: 0;
   }
 
   .linkedin-cover__services {
-    text-align: center;
+    text-align: left;
   }
 
   .linkedin-profile {
-    padding: 0 20px 20px;
+    padding: 0 20px 16px;
   }
 }
 
 @media (max-width: 600px) {
-  .linkedin-profile__header-row {
+  .linkedin-profile__bar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -718,6 +700,7 @@
 
   .linkedin-profile__actions {
     width: 100%;
+    margin-left: 0;
   }
 
   .linkedin-profile__actions .btn {
