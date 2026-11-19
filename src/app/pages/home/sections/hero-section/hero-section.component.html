@@ -2,30 +2,37 @@
   <div class="sg-container hero__wrapper">
     <!-- Official LinkedIn-Matched Header Card -->
     <div class="linkedin-card">
-      <!-- 1. Deep Navy Cover Banner with Executive Identity & Right Services -->
+      <!-- 1. Deep Navy Cover Banner with Integrated Avatar & Executive Identity -->
       <div class="linkedin-cover">
-        <!-- Left/Main: Executive Identity (Moved up into banner) -->
-        <div class="linkedin-cover__brand">
-          <div class="linkedin-cover__title-wrap">
-            <h1 id="hero-company-name" class="linkedin-cover__title">StarGuru</h1>
-            <span class="badge-mwob" title="Certified Minority & Women-Owned Small Business">
-              <span class="badge-mwob__star" aria-hidden="true">★</span>
-              Minority Women-Owned Small Business
-            </span>
+        <!-- Left: Integrated Avatar & Brand Identity -->
+        <div class="linkedin-cover__left">
+          <!-- Avatar Box with Star Emblem (Positioned inline - no negative margin overlap) -->
+          <div class="linkedin-avatar" role="img" aria-label="StarGuru Emblem">
+            <img
+              src="/images/starguru-icon-navy-bg.png"
+              alt="StarGuru Gold Star"
+              class="linkedin-avatar__img"
+              width="90"
+              height="90"
+            />
           </div>
 
-          <p class="linkedin-cover__tagline">
-            Enterprise AI, Cloud, Data &amp; Digital Engineering: strategy that becomes shipped software.
-          </p>
+          <div class="linkedin-cover__brand">
+            <h1 id="hero-company-name" class="linkedin-cover__title">StarGuru</h1>
 
-          <div class="linkedin-cover__meta">
-            <span class="meta-item">IT Services and IT Consulting</span>
-            <span class="meta-sep">·</span>
-            <span class="meta-item">Cumming, Georgia</span>
-            <span class="meta-sep">·</span>
-            <span class="meta-item">2-10 employees</span>
-            <span class="meta-sep">·</span>
-            <span class="meta-item">16+ Years Delivery Experience</span>
+            <p class="linkedin-cover__tagline">
+              Enterprise AI, Cloud, Data &amp; Digital Engineering: strategy that becomes shipped software.
+            </p>
+
+            <div class="linkedin-cover__meta">
+              <span class="meta-item">IT Services and IT Consulting</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-item">Cumming, Georgia</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-item">2-10 employees</span>
+              <span class="meta-sep">·</span>
+              <span class="meta-item">16+ Years Delivery Experience</span>
+            </div>
           </div>
         </div>
 
@@ -38,46 +45,32 @@
         <div class="linkedin-cover__gold-stripe" aria-hidden="true"></div>
       </div>
 
-      <!-- 2. Profile Action Bar with Overlapping Avatar & Quick Actions -->
-      <div class="linkedin-profile">
-        <div class="linkedin-profile__bar">
-          <!-- Overlapping Avatar Box with Star Emblem -->
-          <div class="linkedin-avatar" role="img" aria-label="StarGuru Emblem">
-            <img
-              src="/images/starguru-icon-navy-bg.png"
-              alt="StarGuru Gold Star"
-              class="linkedin-avatar__img"
-              width="90"
-              height="90"
-            />
-          </div>
-
-          <!-- Quick Action Buttons -->
-          <div class="linkedin-profile__actions">
-            <a class="btn btn--primary" href="#contact">
-              Schedule Consultation
-              <span class="btn__arrow" aria-hidden="true">→</span>
-            </a>
-            <a class="btn btn--secondary" href="tel:+16789954883" aria-label="Call +1 678 995 4883">
-              <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              (678) 995-4883
-            </a>
-            <a
-              class="btn btn--ghost"
-              href="https://www.bing.com/maps?where=Cumming%2C%20Georgia%2C%20US"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Get directions to Cumming, Georgia US on Bing Maps"
-            >
-              <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              Cumming, GA
-            </a>
-          </div>
+      <!-- 2. Clean Action Bar Below Banner (No Overlaps) -->
+      <div class="linkedin-action-bar">
+        <div class="linkedin-action-bar__buttons">
+          <a class="btn btn--primary" href="#contact">
+            Schedule Consultation
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn--secondary" href="tel:+16789954883" aria-label="Call +1 678 995 4883">
+            <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            (678) 995-4883
+          </a>
+          <a
+            class="btn btn--ghost"
+            href="https://www.bing.com/maps?where=Cumming%2C%20Georgia%2C%20US"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get directions to Cumming, Georgia US on Bing Maps"
+          >
+            <svg class="btn__icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Cumming, GA
+          </a>
         </div>
       </div>
     </div>
